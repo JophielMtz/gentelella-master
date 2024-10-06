@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Info Personal</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet" />
+
+  <!-- Custom Theme Style -->
+  <link rel="stylesheet" href="/build/css/my-styles.css">
+  <link href="../build/css/custom.min.css" rel="stylesheet" />
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0">
+            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gen</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/img.jpg" alt="..." class="img-circle profile_img" />
+            </div>
+            <div class="profile_info">
+              <span>Welcome,</span>
+              <h2>John Doe</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section ">
+              <h3>General</h3>
+                <ul class="nav side-menu ">
+                  <li><a href="index.html"><i class="fa fa-home"></i>Inicio</a>
+                  <li><a href="pendientes.html"><i class="fa fa-clock-o"></i>Pendientes</a>
+                  <li><a><i class="fa fa-book"></i> Gestión de Docentes<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="docentes.html">Docentes disponibles</a></li>
+                      <li><a href="nombramients.html">Nombramientos docentes</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-clipboard"></i>Licencias e Incidencias<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="docentes.html">Licencias sin goce</a></li>
+                      <li><a href="incidencias.html">Incidencias</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="calendar.html"><i class="fa fa-calendar"></i>Calendario</a>
+                  <li><a><i class="fa fa-paper-plane"></i> Solicitudes<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="sol-generales.html">Generales</a></li>
+                      <li><a href="cambios.html">Cambio</a></li>
+                      <li><a href="sol-personal.html">Personal</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-user-md"></i>Salud y Apoyo<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="salud.html">Salud</a></li>
+                      <li><a href="becas.html">Beca Comisión</a></li>
+                      <li><a href="apoyo.html">Apoyo lentes</a></li>
+                    </ul>
+                  <li><a><i class="fa fa-user"></i>Lista de personal<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="general.html">General</a></li>
+                      <li><a href="lista-administrativo.html">Administrativo</a></li>
+                      <li><a href="lista-docente.html">Docente</a></li>
+                      <li><a href="lista-federal.html">Federal</a></li>
+                  </ul>
+                </li>
+                <li><a href="contacts.html"><i class="fa fa-users"></i>Personal</a>
+                </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <div class="nav toggle">
+            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+          </div>
+          <nav class="nav navbar-nav">
+            <ul class="navbar-right">
+              <li class="nav-item dropdown open" style="padding-left: 15px">
+                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
+                  data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/img.jpg" alt="" />John Doe
+                </a>
+                <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="javascript:;"> Profile</a>
+                  <a class="dropdown-item" href="javascript:;">
+                    <span class="badge bg-red pull-right">50%</span>
+                    <span>Settings</span>
+                  </a>
+                  <a class="dropdown-item" href="javascript:;">Help</a>
+                  <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                </div>
+              </li>
+
+              <li role="presentation" class="nav-item dropdown open">
+                <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie
+                        makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie
+                        makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie
+                        makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie
+                        makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="text-center">
+                      <a class="dropdown-item">
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>Ficha de personal</h3>
+            </div>
+
+            <div class="title_right">
+              <div class="col-md-5 col-sm-5 form-group pull-right top_search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Buscar" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">ir</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="row">
+            <div class="x_panel">
+              <div class="x_content">
+                <div class="col-md-12 col-sm-12 text-center">
+                  <ul class="pagination pagination-split">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">D</a></li>
+                    <li><a href="#">E</a></li>
+                    <li><a href="#">F</a></li>
+                    <li><a href="#">G</a></li>
+                    <li><a href="#">H</a></li>
+                    <li><a href="#">I</a></li>
+                    <li><a href="#">J</a></li>
+                    <li><a href="#">K</a></li>
+                    <li><a href="#">L</a></li>
+                    <li><a href="#">M</a></li>
+                    <li><a href="#">N</a></li>
+                    <li><a href="#">O</a></li>
+                    <li><a href="#">P</a></li>
+                    <li><a href="#">Q</a></li>
+                    <li><a href="#">R</a></li>
+                    <li><a href="#">S</a></li>
+                    <li><a href="#">T</a></li>
+                    <li><a href="#">U</a></li>
+                    <li><a href="#">V</a></li>
+                    <li><a href="#">W</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Y</a></li>
+                    <li><a href="#">Z</a></li>
+                  </ul>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="col-md-4 col-sm-4 profile_details">
+                  <div class="well profile_view">
+                    <div class="col-sm-12">
+                      <h4 class="brief"><i>Docente de Matemáticas</i></h4>
+                        <div class="left col-md-7 col-sm-7">
+                          <h2>Juan Pérez</h2>
+                          <p><strong>Acerca: </strong> Maestro de Matemáticas / Experto en Didáctica</p>
+                         <ul class="list-unstyled">
+                            <li><i class="fa fa-building"></i> Dirección: Calle Ejemplo 123, Colonia Centro</li>
+                            <li><i class="fa fa-phone"></i> Teléfono: 61812345678</li>
+                          </ul>
+                        </div>
+                      <div class="right col-md-5 col-sm-5 text-center">
+                        <img src="images/img.jpg" alt="" class="img-circle img-fluid" />
+                      </div>
+                    </div>
+                    <div class="profile-bottom text-center">
+                      <div class="col-sm-6 emphasis">
+                        <p class="ratings">
+                          <a>4.0</a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star-o"></span></a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 emphasis">
+                        <button type="button" class="btn btn-success btn-sm">
+                          <i class="fa fa-user"> </i>
+                          <i class="fa fa-comments-o"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                          data-target=".bs-example-modal-lg">
+                          Ver perfil
+                        </button>
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">
+                                  Perfil
+                                </h4>
+                                <button type="button" class="close" data-dismiss="modal">
+                                  <span aria-hidden="true">×</span>
+                                </button>
+                              </div>
+                              <!--Contenido Modal-->
+                              <div class="modal-body">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-lg-4">
+                                      <div class="profile-card-4 z-depth-3">
+                                        <div class="card">
+                                          <div class="card-body text-center bg-primary rounded-top">
+                                            <div class="user-box">
+                                              <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                                alt="user avatar" />
+                                            </div>
+                                            <h5 class="mb-1 text-white">
+                                              José Díaz
+                                            </h5>
+                                            <h6 class="text-light">
+                                              Docente
+                                            </h6>
+                                          </div>
+                                          <div class="card-body">
+                                            <ul class="list-group shadow-none">
+                                              <li class="list-group-item">
+                                                <div class="list-icon">
+                                                  <i class="fa fa-phone-square"></i>
+                                                </div>
+                                                <div class="list-details">
+                                                  <span>61812345678</span>
+                                                  <small>Teléfono</small>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="list-icon">
+                                                  <i class="fa fa-envelope"></i>
+                                                </div>
+                                                <div class="list-details">
+                                                  <span>info@gmail.com</span>
+                                                  <small>Correo</small>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <div class="list-icon">
+                                                  <i class="fa fa-globe"></i>
+                                                </div>
+                                                <div class="list-details">
+                                                  <span>zona 3</span>
+                                                  <small>Sección</small>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                            <div class="row text-center mt-4">
+                                              <div class="col p-2">
+                                                <h4 class="mb-1 line-height-5">
+                                                  154
+                                                </h4>
+                                                <small class="mb-0 font-weight-bold">Cursos</small>
+                                              </div>
+                                              <div class="col p-2">
+                                                <h4 class="mb-1 line-height-5">
+                                                  2
+                                                </h4>
+                                                <small class="mb-0 font-weight-bold">N/A</small>
+                                              </div>
+                                              <div class="col p-2">
+                                                <h4 class="mb-1 line-height-5">
+                                                  9
+                                                </h4>
+                                                <small class="mb-0 font-weight-bold">N/A</small>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                      <div class="card z-depth-3">
+                                        <div class="card-body ">
+                                          <ul class="nav nav-pills nav-pills-primary nav-justified">
+                                            <li class="nav-item">
+                                              <a href="javascript:void();" data-target="#profile" data-toggle="pill"
+                                                class="nav-link active show"><i class="icon-user"></i>
+                                                <span class="hidden-xs">Perfil</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a href="javascript:void();" data-target="#messages" data-toggle="pill"
+                                                class="nav-link"><i class="icon-envelope-open"></i>
+                                                <span class="hidden-xs">Mensajes</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a href="javascript:void();" data-target="#edit" data-toggle="pill"
+                                                class="nav-link"><i class="icon-note"></i>
+                                                <span class="hidden-xs">Editar</span></a>
+                                            </li>
+                                          </ul>
+                                          <div class="tab-content p-3">
+                                            <div class="tab-pane active show" id="profile">
+                                              <h5 class="mb-3">Perfil</h5>
+                                              <hr />
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <h6>Cargo</h6>
+                                                  <a href="javascript:void();"
+                                                    class="badge badge-dark badge-pill">Docente</a>
+                                                  <a href="javascript:void();"
+                                                    class="badge badge-dark badge-pill">Director</a>
+                                                  <a href="javascript:void();"
+                                                    class="badge badge-dark badge-pill">Supervisor</a>
+                                                  <a href="javascript:void();"
+                                                    class="badge badge-dark badge-pill">Administrativo</a>
+                                                  <a href="javascript:void();"
+                                                    class="badge badge-dark badge-pill">Federal</a>
+                                                  <hr />
+                                                </div>
+
+                                                <div class="col-md-12" style="text-align: left;">
+                                                  <h6>Nombre</h6>
+                                                  <p>
+                                                      Juan Pérez
+                                                  </p>
+                                                  <h6>Dirección</h6>
+                                                  <p>
+                                                      Calle Ejemplo 123, Colonia Centro
+                                                  </p>
+                                                  <h6>Estado</h6>
+                                                  <p>
+                                                      Durango
+                                                  </p>
+                                              </div>
+                                                <div class="col-md-12">
+                                                  <h5 class="mt-2 mb-3">
+                                                    <span class="fa fa-clock-o ion-clock float-right"></span>
+                                                    Atividad reciente
+                                                  </h5>
+                                                  <table class="table table-hover table-striped">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>
+                                                          <strong>Abby</strong>
+                                                          joined ACME Project
+                                                          Team in
+                                                          <strong>`Collaboration`</strong>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>
+                                                          <strong>Gary</strong>
+                                                          deleted My Board1 in
+                                                          <strong>`Discussions`</strong>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>
+                                                          <strong>Kensington</strong>
+                                                          deleted MyBoard3 in
+                                                          <strong>`Discussions`</strong>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>
+                                                          <strong>John</strong>
+                                                          deleted My Board1 in
+                                                          <strong>`Discussions`</strong>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>
+                                                          <strong>Skell</strong>
+                                                          deleted his post
+                                                          Look at Why this
+                                                          is.. in
+                                                          <strong>`Discussions`</strong>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                              <!--/row-->
+                                            </div>
+                                            <div class="tab-pane" id="messages">
+                                              <div class="alert alert-info alert-dismissible" role="alert">
+                                                <button type="button" class="close" data-dismiss="alert">
+                                                  ×
+                                                </button>
+                                                <div class="alert-icon">
+                                                  <i class="icon-info"></i>
+                                                </div>
+                                                <div class="alert-message">
+                                                  <span><strong>Info!</strong>
+                                                    Lorem Ipsum is simply
+                                                    dummy text.</span>
+                                                </div>
+                                              </div>
+                                              <table class="table table-hover table-striped">
+                                                <tbody>
+                                                  <tr>
+                                                    <td>
+                                                      <span class="float-right font-weight-bold">3 hrs ago</span>
+                                                      Here is your a link to
+                                                      the latest summary
+                                                      report from the..
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      <span class="float-right font-weight-bold">Yesterday</span>
+                                                      There has been a request
+                                                      on your account since
+                                                      that was..
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      <span class="float-right font-weight-bold">9/10</span>
+                                                      Porttitor vitae ultrices
+                                                      quis, dapibus id dolor.
+                                                      Morbi venenatis lacinia
+                                                      rhoncus.
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      <span class="float-right font-weight-bold">9/4</span>
+                                                      Vestibulum tincidunt
+                                                      ullamcorper eros eget
+                                                      luctus.
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      <span class="float-right font-weight-bold">9/4</span>
+                                                      Maxamillion ais the fix
+                                                      for tibulum tincidunt
+                                                      ullamcorper eros.
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                            <div class="tab-pane" id="edit">
+                                              <form>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label">Nombre</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" type="text" value="Mark" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label">Apellido</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" type="text" value="Jhonsan" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label">Correo electrónico</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" type="email" value="mark@example.com" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label">Subir foto de perfil</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" type="file" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label">Sitio web</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" type="url" value="" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label">Dirección</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" type="text" value="" placeholder="Calle" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label"></label>
+                                                    <div class="col-lg-6">
+                                                        <input class="form-control" type="text" value="" placeholder="Ciudad" />
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <input class="form-control" type="text" value="" placeholder="Estado" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label">Nombre de usuario</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" type="text" value="jhonsanmark" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label">Contraseña</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" type="password" value="11111122333" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label">Confirmar contraseña</label>
+                                                    <div class="col-lg-9">
+                                                        <input class="form-control" type="password" value="11111122333" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label form-control-label"></label>
+                                                    <div class="col-lg-9">
+                                                        <input type="reset" class="btn btn-secondary" value="Cancelar" />
+                                                        <input type="button" class="btn btn-primary" value="Guardar cambios" />
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                  Cerrar
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                  Guardar cambios
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 profile_details">
+                  <div class="well profile_view">
+                    <div class="col-sm-12">
+                      <h4 class="brief"><i>Digital Strategist</i></h4>
+                      <div class="left col-sm-7">
+                        <h2>Nicole Pearson</h2>
+                        <p><strong>About: </strong> Web Designer / UI.</p>
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-building"></i> Address:</li>
+                          <li><i class="fa fa-phone"></i> Phone #:</li>
+                        </ul>
+                      </div>
+                      <div class="right col-sm-5 text-center">
+                        <img src="images/user.png" alt="" class="img-circle img-fluid" />
+                      </div>
+                    </div>
+                    <div class="bottom text-center">
+                      <div class="col-sm-6 emphasis">
+                        <p class="ratings">
+                          <a>4.0</a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star-o"></span></a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 emphasis">
+                        <button type="button" class="btn btn-success btn-sm">
+                          <i class="fa fa-user"> </i>
+                          <i class="fa fa-comments-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                          <i class="fa fa-user"> </i> Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 profile_details">
+                  <div class="well profile_view">
+                    <div class="col-sm-12">
+                      <h4 class="brief"><i>Digital Strategist</i></h4>
+                      <div class="left col-sm-7">
+                        <h2>Nicole Pearson</h2>
+                        <p><strong>About: </strong> Web Designer / UI.</p>
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-building"></i> Address:</li>
+                          <li><i class="fa fa-phone"></i> Phone #:</li>
+                        </ul>
+                      </div>
+                      <div class="right col-sm-5 text-center">
+                        <img src="images/user.png" alt="" class="img-circle img-fluid" />
+                      </div>
+                    </div>
+                    <div class="bottom text-center">
+                      <div class="col-sm-6 emphasis">
+                        <p class="ratings">
+                          <a>4.0</a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star-o"></span></a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 emphasis">
+                        <button type="button" class="btn btn-success btn-sm">
+                          <i class="fa fa-user"> </i>
+                          <i class="fa fa-comments-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                          <i class="fa fa-user"> </i> Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 profile_details">
+                  <div class="well profile_view">
+                    <div class="col-sm-12">
+                      <h4 class="brief"><i>Digital Strategist</i></h4>
+                      <div class="left col-sm-7">
+                        <h2>Nicole Pearson</h2>
+                        <p><strong>About: </strong> Web Designer / UI.</p>
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-building"></i> Address:</li>
+                          <li><i class="fa fa-phone"></i> Phone #:</li>
+                        </ul>
+                      </div>
+                      <div class="right col-sm-5 text-center">
+                        <img src="images/user.png" alt="" class="img-circle img-fluid" />
+                      </div>
+                    </div>
+                    <div class="bottom text-center">
+                      <div class="col-sm-6 emphasis">
+                        <p class="ratings">
+                          <a>4.0</a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star-o"></span></a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 emphasis">
+                        <button type="button" class="btn btn-success btn-sm">
+                          <i class="fa fa-user"> </i>
+                          <i class="fa fa-comments-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                          <i class="fa fa-user"> </i> Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 profile_details">
+                  <div class="well profile_view">
+                    <div class="col-sm-12">
+                      <h4 class="brief"><i>Digital Strategist</i></h4>
+                      <div class="left col-sm-7">
+                        <h2>Nicole Pearson</h2>
+                        <p>
+                          <strong>About: </strong> Web Designer / UX / Graphic
+                          Artist / Coffee Lover
+                        </p>
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-building"></i> Address:</li>
+                          <li><i class="fa fa-phone"></i> Phone #:</li>
+                        </ul>
+                      </div>
+                      <div class="right col-sm-5 text-center">
+                        <img src="images/img.jpg" alt="" class="img-circle img-fluid" />
+                      </div>
+                    </div>
+                    <div class="bottom text-center">
+                      <div class="col-sm-6 emphasis">
+                        <p class="ratings">
+                          <a>4.0</a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star-o"></span></a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 emphasis">
+                        <button type="button" class="btn btn-success btn-sm">
+                          <i class="fa fa-user"> </i>
+                          <i class="fa fa-comments-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                          <i class="fa fa-user"> </i> Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 profile_details">
+                  <div class="well profile_view">
+                    <div class="col-sm-12">
+                      <h4 class="brief"><i>Digital Strategist</i></h4>
+                      <div class="left col-sm-7">
+                        <h2>Nicole Pearson</h2>
+                        <p><strong>About: </strong> Web Designer / UI.</p>
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-building"></i> Address:</li>
+                          <li><i class="fa fa-phone"></i> Phone #:</li>
+                        </ul>
+                      </div>
+                      <div class="right col-sm-5 text-center">
+                        <img src="images/user.png" alt="" class="img-circle img-fluid" />
+                      </div>
+                    </div>
+                    <div class="bottom text-center">
+                      <div class="col-sm-6 emphasis">
+                        <p class="ratings">
+                          <a>4.0</a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star-o"></span></a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 emphasis">
+                        <button type="button" class="btn btn-success btn-sm">
+                          <i class="fa fa-user"> </i>
+                          <i class="fa fa-comments-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                          <i class="fa fa-user"> </i> Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 profile_details">
+                  <div class="well profile_view">
+                    <div class="col-sm-12">
+                      <h4 class="brief"><i>Digital Strategist</i></h4>
+                      <div class="left col-sm-7">
+                        <h2>Nicole Pearson</h2>
+                        <p><strong>About: </strong> Web Designer / UI.</p>
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-building"></i> Address:</li>
+                          <li><i class="fa fa-phone"></i> Phone #:</li>
+                        </ul>
+                      </div>
+                      <div class="right col-sm-5 text-center">
+                        <img src="images/user.png" alt="" class="img-circle img-fluid" />
+                      </div>
+                    </div>
+                    <div class="bottom text-center">
+                      <div class="col-sm-6 emphasis">
+                        <p class="ratings">
+                          <a>4.0</a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star-o"></span></a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 emphasis">
+                        <button type="button" class="btn btn-success btn-sm">
+                          <i class="fa fa-user"> </i>
+                          <i class="fa fa-comments-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                          <i class="fa fa-user"> </i> Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 profile_details">
+                  <div class="well profile_view">
+                    <div class="col-sm-12">
+                      <h4 class="brief"><i>Digital Strategist</i></h4>
+                      <div class="left col-sm-7">
+                        <h2>Nicole Pearson</h2>
+                        <p><strong>About: </strong> Web Designer / UI.</p>
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-building"></i> Address:</li>
+                          <li><i class="fa fa-phone"></i> Phone #:</li>
+                        </ul>
+                      </div>
+                      <div class="right col-sm-5 text-center">
+                        <img src="images/user.png" alt="" class="img-circle img-fluid" />
+                      </div>
+                    </div>
+                    <div class="bottom text-center">
+                      <div class="col-sm-6 emphasis">
+                        <p class="ratings">
+                          <a>4.0</a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star-o"></span></a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 emphasis">
+                        <button type="button" class="btn btn-success btn-sm">
+                          <i class="fa fa-user"> </i>
+                          <i class="fa fa-comments-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                          <i class="fa fa-user"> </i> Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 profile_details">
+                  <div class="well profile_view">
+                    <div class="col-sm-12">
+                      <h4 class="brief"><i>Digital Strategist</i></h4>
+                      <div class="left col-sm-7">
+                        <h2>Nicole Pearson</h2>
+                        <p><strong>About: </strong> Web Designer / UI.</p>
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-building"></i> Address:</li>
+                          <li><i class="fa fa-phone"></i> Phone #:</li>
+                        </ul>
+                      </div>
+                      <div class="right col-sm-5 text-center">
+                        <img src="images/user.png" alt="" class="img-circle img-fluid" />
+                      </div>
+                    </div>
+                    <div class="bottom text-center">
+                      <div class="col-sm-6 emphasis">
+                        <p class="ratings">
+                          <a>4.0</a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star"></span></a>
+                          <a href="#"><span class="fa fa-star-o"></span></a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 emphasis">
+                        <button type="button" class="btn btn-success btn-sm">
+                          <i class="fa fa-user"> </i>
+                          <i class="fa fa-comments-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                          <i class="fa fa-user"> </i> Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+</body>
+
+</html>
